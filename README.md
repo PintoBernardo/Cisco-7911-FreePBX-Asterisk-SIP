@@ -53,9 +53,10 @@ To save you the headache of hunting down individual files and ensure everything 
 
 -   **SCCP Firmware:** Essential for the initial upgrade path.
 -   **SIP Firmware:** The firmware that allows your phone to register with FreePBX/Asterisk.
--   **Configuration File Templates:** Ready-to-use templates for files like `SEP<MACADDRESS>.cnf.xml`,  `dialplan.xml` and others.
+-   **Configuration File Templates:** Ready-to-use templates for files like `SEP(MAC_ADDRESS).cnf.xml`,  `dialplan.xml` and others.
 -   **Ringtones:** Some Cisco ringtones for your phone (If you find more later you can set it up after).
--   **Dial Plans:** Both Portuguese (PT) and U.S. (US) dial plan examples to get you started.
+-   **Dial Plans:** Both Portuguese (PT) and U.S. A. (USA) dial plan examples to get you started
+	-  You will need to rename the file you want fomr `dialplan - USA.xml`or `dialplan PT.xml` to `dialplan.xml`
 -   **Pre-configured `SEP` template:** Simplified setup template for SIP.
 
 **Download my pre-built setup package here:**
@@ -64,19 +65,19 @@ To save you the headache of hunting down individual files and ensure everything 
 
 Once downloaded, **extract the entire contents of the archive.** Keep these files organized, as you'll be moving them to your TFTP server in the next steps. This package aims to streamline the most frustrating part of the 7911 setup!
 
-#### Step 2: Configure the `SEP<MAC_ADDRESS>.cnf.xml` File ⚙️
+#### Step 2: Configure the `SEP(MAC_ADDRESS).cnf.xml` File ⚙️
 
 This is the main configuration file for your specific Cisco 7911 phone. It tells the phone about your FreePBX server, your extension details, and how its softkeys should behave.
 
-1.  **Locate the Template:** After extracting the package from Step 1, find the template file for your phone. It's named `SEP<MAC_ADDRESS>.cnf.xml` and its inside of the folder named `SIP`.
+1.  **Locate the Template:** After extracting the package from Step 1, find the template file for your phone. It's named `SEP(MAC_ADDRESS).cnf.xml` and its inside of the folder named `SIP`.
     
 2.  **Rename the File:**
     
-    -   **Crucially**, rename this template file to `SEP<MAC_ADDRESS>.cnf.xml`.
-    -   **Replace `<MAC_ADDRESS>`** with the actual **MAC address** of your Cisco 7911 phone. You can find the MAC address printed on a sticker on the bottom or back of the phone (e.g., `SEP001A2B3C4D5E.cnf.xml`).
+    -   **Crucially**, rename this template file to `SEP(MAC_ADDRESS).cnf.xml`.
+    -   **Replace `(MAC_ADDRESS)`** with the actual **MAC address** of your Cisco 7911 phone. You can find the MAC address printed on a sticker on the bottom or back of the phone (e.g., `SEP001A2B3C4D5E.cnf.xml`).
 3.  **Edit the File Content:**
     
-    -   Open your newly renamed `SEP<MAC_ADDRESS>.cnf.xml` file using a text editor (like `nano` on your Debian system).
+    -   Open your newly renamed `SEP(MAC_ADDRESS).cnf.xml` file using a text editor (like `nano` on your Debian system).
         
     -   Inside the file, you'll find several placeholders that look like `[===PLACEHOLDER_NAME===]`. You need to replace these with your specific FreePBX and phone details:
         
@@ -87,7 +88,7 @@ This is the main configuration file for your specific Cisco 7911 phone. It tells
         -   **`[===Password===]`**: Replace this with the **SIP secret/password** for that extension, as defined in your FreePBX extension settings.
         -  **TimeZone:** You can also setup the timezone, but the phone will get the time and date form the FreePBX server.
         
-4.  **Save the File:** Save the changes to `SEP<MAC_ADDRESS>.cnf.xml`.
+4.  **Save the File:** Save the changes to `SEP(MAC_ADDRESS).cnf.xml`.
 
 
 #### Step 3: Setting Up `dnsmasq` for DHCP 📡
@@ -191,7 +192,7 @@ dhcp-option=66,192.168.1.1
 
    
     
- **TFTP Root Directory :**  As a reminder, ensure all the files you downloaded and prepared in Step 1 and Step 2 (firmware, `SEP<MAC_ADDRESS>.cnf.xml`, `dialplan.xml`, etc.) are copied into the `/srv/tftp/` directory on your FreePBX server. This is where `dnsmasq` will look for them when phones request them. You can use a software like [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) that when ssh with the root user allows you to send files using SFTP to the folder we want. **You can use other dir but you have to macth the dnsmasq.conf first! You can also use the default dir i had allredy the /srv/tftp/ setup**
+ **TFTP Root Directory :**  As a reminder, ensure all the files you downloaded and prepared in Step 1 and Step 2 (firmware, `SEP(MAC_ADDRESS).cnf.xml`, `dialplan.xml`, etc.) are copied into the `/srv/tftp/` directory on your FreePBX server. This is where `dnsmasq` will look for them when phones request them. You can use a software like [MobaXterm](https://mobaxterm.mobatek.net/download-home-edition.html) that when ssh with the root user allows you to send files using SFTP to the folder we want. **You can use other dir but you have to macth the dnsmasq.conf first! You can also use the default dir i had allredy the /srv/tftp/ setup**
     
 3.  **Save and Exit:** Press `Ctrl+X`, then `Y` to confirm saving, and `Enter` to write to the file.
     
@@ -308,7 +309,7 @@ BSNetworking - Dont Forget to support the ones that help you! In the video he is
 
 #### 4.2. Flashing SIP Firmware and Loading Configuration
 
-Now that the SCCP firmware is updated, we can push the SIP firmware and your custom `SEP<MAC_ADDRESS>.cnf.xml` file.
+Now that the SCCP firmware is updated, we can push the SIP firmware and your custom `SEP(MAC_ADDRESS).cnf.xml` file.
 
 1.  **Clear TFTP Directory Again:** It's best to clear out the SCCP firmware files before adding the SIP ones to avoid confusion:
     
@@ -319,7 +320,7 @@ Now that the SCCP firmware is updated, we can push the SIP firmware and your cus
     
 2.  **Copy SIP Firmware and Configuration Files to TFTP Root:** Again, you have two options:
     
-    -   **Option A: Command Line:** Navigate to the extracted directory of your pre-built configuration package on your server. Locate the folder containing the **SIP firmware files**. Copy **all** the contents of this SIP firmware folder into your `/srv/tftp/` directory. **Crucially, ensure your custom `SEP<MAC_ADDRESS>.cnf.xml` file (from Step 2) and your `dialplan.xml` file are also present in `/srv/tftp/` at this stage.**
+    -   **Option A: Command Line:** Navigate to the extracted directory of your pre-built configuration package on your server. Locate the folder containing the **SIP firmware files**. Copy **all** the contents of this SIP firmware folder into your `/srv/tftp/` directory. **Crucially, ensure your custom `SEP(MAC_ADDRESS).cnf.xml` file (from Step 2) and your `dialplan.xml` file are also present in `/srv/tftp/` at this stage.**
         
         
         ```
@@ -360,9 +361,9 @@ BSNetworking - Dont Forget to support the ones that help you!
         watch systemctl status dnsmasq
         ```
         
-        You will see more DHCP requests and TFTP transfers as the phone downloads the SIP firmware and then your `SEP<MAC_ADDRESS>.cnf.xml` file.
+        You will see more DHCP requests and TFTP transfers as the phone downloads the SIP firmware and then your `SEP(MAC_ADDRESS).cnf.xml` file.
     -   **On the Phone:** The phone may restart several times. It's common for Cisco phones to upgrade in stages, sometimes downloading one SIP file, restarting, then downloading another. Be patient.
-    -   **Completion:** The phone will eventually finish upgrading. It will then attempt to register with FreePBX using the details in your `SEP<MAC_ADDRESS>.cnf.xml`. Since your FreePBX server is currently on the isolated `192.168.1.x` network and likely doesn't have its "normal" production IP, the registration attempt will fail, and the phone might display "Registering" forver or "Unprovisioned" **This is normal for now.**
+    -   **Completion:** The phone will eventually finish upgrading. It will then attempt to register with FreePBX using the details in your `SEP(MAC_ADDRESS).cnf.xml`. Since your FreePBX server is currently on the isolated `192.168.1.x` network and likely doesn't have its "normal" production IP, the registration attempt will fail, and the phone might display "Registering" forver or "Unprovisioned" **This is normal for now.**
 
 At this point, your Cisco 7911 has the correct SIP firmware and has loaded its FreePBX configuration. You can now unplug the phone from the isolated network. It's ready for the final step: restoring your server's network and setting up a dedicated TFTP server for continued phone operations.
 
@@ -510,8 +511,8 @@ Even with a detailed guide, setting up older VoIP phones like the Cisco 7911 can
 
 This is, by far, the most frequent culprit! A single misplaced character or incorrect value in your configuration files can prevent the phone from working.
 
--   **Double-Check `SEP<MAC_ADDRESS>.cnf.xml`:**
-    -   **MAC Address:** Ensure the filename `SEP<MAC_ADDRESS>.cnf.xml` precisely matches your phone's MAC address.
+-   **Double-Check `SSEP(MAC_ADDRESS).cnf.xml`:**
+    -   **MAC Address:** Ensure the filename `SEP(MAC_ADDRESS).cnf.xml` precisely matches your phone's MAC address.
     -   **Placeholders:** Verify that every instance of `[===FreePBX IP===]`, `[===Extension===]`, `[===Password===]`, `[===Phone Name===]`, and `[===Line Name===]` has been correctly replaced with your specific details.
     -   **Syntax:** Even small things like missing angle brackets (`<`, `>`), incorrect quotes (`"`), or extra spaces can break the XML. Use a plain text editor (like Nano or Notepad++) that doesn't add hidden formatting.
 -   **Verify `dialplan.xml`:** Ensure your `dialplan.xml` is present in `/srv/tftp/` and correctly configured for your dialing patterns. A malformed dial plan can prevent outbound calls.
