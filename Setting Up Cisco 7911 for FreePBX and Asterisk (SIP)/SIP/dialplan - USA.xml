@@ -1,0 +1,26 @@
+<DIALTEMPLATE>
+  <TEMPLATE MATCH="2XXX">
+    <DialString>2XXXX</DialString>
+  </TEMPLATE>
+  <TEMPLATE MATCH="911">
+    <DialString>911</DialString>
+  </TEMPLATE>
+  <TEMPLATE MATCH="9[2-9]XXXXXX">
+    <DialString>9\1</DialString>
+  </TEMPLATE>
+  <TEMPLATE MATCH="9[2-9]XX[2-9]XXXXXX">
+    <DialString>9\1</DialString>
+  </TEMPLATE>
+  <TEMPLATE MATCH="91[2-9]XX[2-9]XXXXXX">
+    <DialString>9\1</DialString>
+  </TEMPLATE>
+  <TEMPLATE MATCH="9011*">
+    <DialString>9\1</DialString>
+  </TEMPLATE>
+  <TEMPLATE MATCH="*XX">
+    <DialString>*XX</DialString>
+  </TEMPLATE>
+  <TEMPLATE MATCH="#XX">
+    <DialString>#XX</DialString>
+  </TEMPLATE>
+</DIALTEMPLATE>
