@@ -1,0 +1,1 @@
+369       SCCP11.8-5-2S     0             // IP Phone 7906G SCCP
