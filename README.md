@@ -18,7 +18,7 @@ To follow this guide, you'll need a few things set up. Here's a breakdown of the
 #### Software & Operating System Specs 💻
 
 -   **Asterisk:** I're rolling with version `18.26.2` here. If you have a slightly different version, don't worry, it'll likely still work just fine!
--   **FreePBX:** Our guide uses `16.0.40.13` sitting on top of Asterisk. Again, close versions should be okay.
+-   **FreePBX:** My guide uses `16.0.40.13` sitting on top of Asterisk. Again, close versions should be okay.
 -   **Operating System:** I're doing this on **Debian 12 (Bookworm)**.
     -   _Our Setup:_ Just for context, I ran our Debian instance on **VMware Workstation 17** which was hosted on a Windows 10 Pro machine. Your setup might vary, but the principles remain the same!
 -  **SIP - chan_pjsip:** For this guide I are using the now recommended SIP for Asterisk: `chan_pjsip`.
