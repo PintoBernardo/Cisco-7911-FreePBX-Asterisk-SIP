@@ -56,7 +56,7 @@ To save you the headache of hunting down individual files and ensure everything 
 -   **Configuration File Templates:** Ready-to-use templates for files like `SEP(MAC_ADDRESS).cnf.xml`,  `dialplan.xml` and others.
 -   **Ringtones:** Some Cisco ringtones for your phone (If you find more later you can set it up after).
 -   **Dial Plans:** Both Portuguese (PT) and U.S. A. (USA) dial plan examples to get you started
-	-  You will need to rename the file you want fomr `dialplan - USA.xml`or `dialplan PT.xml` to `dialplan.xml`
+	-  You will need to rename the file you want fomr `dialplan - USA.xml` or `dialplan PT.xml` to `dialplan.xml`
 -   **Pre-configured `SEP` template:** Simplified setup template for SIP.
 
 **Download my pre-built setup package here:**
