@@ -486,7 +486,7 @@ Therefore, you'll need to manually tell each Cisco 7911 phone the IP address of 
 2.  **Navigate to Alternative TFTP:**
     
     -   Scroll down to option **16. Alternative TFTP**.
-    -   To enable it, press ** `**#` ** and wait a moment. The optionto "Yes" should apere as a choice.
+    -   To enable it, press `**#` and wait a moment. The optionto "Yes" should apere as a choice.
     -   Press the  **Yes softkey**.
 
 3.  **Set TFTP Server IP:**
