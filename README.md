@@ -4,6 +4,10 @@ This guide provides a detailed walkthrough on how to successfully integrate and 
   
   ----
 
+### Blog post about this at: [Bernardo's Blog](https://pintobernardo.wordpress.com/2025/06/15/setting-up-cisco-7911-for-freepbx-asterisk-sip/)
+
+  ---
+
 ### Prerequisites 🛠️
 
 To follow this guide, you'll need a few things set up. Here's a breakdown of the **hardware** and **software** you'll need to have ready:
