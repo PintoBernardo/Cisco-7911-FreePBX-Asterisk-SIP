@@ -363,7 +363,7 @@ BSNetworking - Dont Forget to support the ones that help you!
         
         You will see more DHCP requests and TFTP transfers as the phone downloads the SIP firmware and then your `SEP(MAC_ADDRESS).cnf.xml` file.
     -   **On the Phone:** The phone may restart several times. It's common for Cisco phones to upgrade in stages, sometimes downloading one SIP file, restarting, then downloading another. Be patient.
-    -   **Completion:** The phone will eventually finish upgrading. It will then attempt to register with FreePBX using the details in your `SEP(MAC_ADDRESS).cnf.xml`. Since your FreePBX server is currently on the isolated `192.168.1.x` network and likely doesn't have its "normal" production IP, the registration attempt will fail, and the phone might display "Registering" forver or "Unprovisioned" **This is normal for now.**
+    -   **Completion:** The phone will eventually finish upgrading. It will then attempt to register with FreePBX using the details in your `SEP(MAC_ADDRESS).cnf.xml`. Since your FreePBX server is currently on the isolated `192.168.1.x` network and likely doesn't have its "normal" production IP, the registration attempt will fail, and the phone might display "Registering" forver **This is normal for now.**
 
 At this point, your Cisco 7911 has the correct SIP firmware and has loaded its FreePBX configuration. You can now unplug the phone from the isolated network. It's ready for the final step: restoring your server's network and setting up a dedicated TFTP server for continued phone operations.
 
