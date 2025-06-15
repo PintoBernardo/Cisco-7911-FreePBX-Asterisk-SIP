@@ -347,7 +347,7 @@ Now that the SCCP firmware is updated, we can push the SIP firmware and your cus
     -   **Plug the Ethernet cable back in** to power on the phone.
     -   Immediately and repeatedly **press and hold the `#` button** until the headset light starts blinking red.
     -   Once the headset light is blinking red, **release the `#` button`.
-    -   Within 60 seconds, **press the sequence `123456789*0#`**.
+    -   Within 60 seconds, **press the sequence **123456789*0#**.
 
 [Here is a video of that on Youtube](https://www.youtube.com/watch?v=QBz1JzUvxzw) - Credits   
 BSNetworking - Dont Forget to support the ones that help you!
