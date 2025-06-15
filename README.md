@@ -340,7 +340,7 @@ Now that the SCCP firmware is updated, we can push the SIP firmware and your cus
         1.  In your existing MobaXterm SSH session to `192.168.1.1`, navigate to the `/srv/tftp/` directory in the SFTP browser.
         2.  On your local machine, find the extracted **SIP firmware folder**.
         3.  **Drag and drop** all the files from our `SIP` folder directly into the `/srv/tftp/` directory.
-        6.  Confirm any `sudo` password prompts from MobaXterm.
+
 3.  **Place Cisco 7911 into Upgrade Mode (Again):** You need to repeat the process to force the phone to look for new firmware and configuration:
     
     -   **Unplug** the Ethernet cable (or power) from your Cisco 7911.
