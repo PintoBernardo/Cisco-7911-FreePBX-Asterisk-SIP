@@ -282,7 +282,7 @@ We begin by updating the phone to a recent version of SCCP firmware. This often 
     -   **Unplug** the Ethernet cable (or power) from your Cisco 7911.
     -   **Plug the Ethernet cable back in** to power on the phone.
     -   Immediately and repeatedly **press and hold the `#` button** until the headset light starts blinking red. This typically takes about 5-10 seconds.
-    -   Once the headset light is blinking red, **release the `#` button`.
+    -   Once the headset light is blinking red, **release the `#` button**.
     -   Within 60 seconds, **press the sequence `123456789*0#`**.
     
     The phone should display a message indicating it's "Upgrading" .
