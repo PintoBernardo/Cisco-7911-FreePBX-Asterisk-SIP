@@ -65,7 +65,7 @@ To save you the headache of hunting down individual files and ensure everything 
 
 **Download my pre-built setup package here:**
 
--   **My Pre-Built Setup For You:** [Here!]( https://github.com/PintoBernardo/Cisco-7911-FreePBX-Asterisk-SIP/archive/refs/heads/main.zip](https://drive.proton.me/urls/AH1RPQQMY8#20jrHegTE172/ ) 🔗
+-   **My Pre-Built Setup For You:** [Here!](https://drive.proton.me/urls/AH1RPQQMY8#20jrHegTE172) 🔗
 
 Once downloaded, **extract the entire contents of the archive.** Keep these files organized, as you'll be moving them to your TFTP server in the next steps. This package aims to streamline the most frustrating part of the 7911 setup!
 
