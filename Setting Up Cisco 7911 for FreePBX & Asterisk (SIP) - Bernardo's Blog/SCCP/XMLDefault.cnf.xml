@@ -1,0 +1,25 @@
+<Default>
+  <callManagerGroup>
+     <members>
+        <member priority="0">
+           <callManager>
+              <ports>
+                 <ethernetPhonePort>2000</ethernetPhonePort>
+                 <mgcpPorts>
+                    <listen>2427</listen>
+                    <keepAlive>2428</keepAlive>
+                 </mgcpPorts>
+              </ports>
+              <processNodeName></processNodeName>
+           </callManager>
+        </member>
+     </members>
+  </callManagerGroup>
+  <loadInformation>SCCP11.8-5-2S</loadInformation>
+ <authenticationURL></authenticationURL>
+  <directoryURL></directoryURL>
+  <idleURL></idleURL>
+  <informationURL></informationURL>
+  <messagesURL></messagesURL>
+  <servicesURL></servicesURL>
+</Default>
