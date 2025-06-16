@@ -1,0 +1,5 @@
+<CiscoIPPhoneImageList>
+	<ImageItem Image="TFTP:Desktops/95x34x1/" URL="TFTP:Desktops/95x34x1/Demo.png"/>
+</CiscoIPPhoneImageList>
+<!-- Image: -> Preview of the image in the selct menu ; URL -> Background It Self -->
+<!-- Image: 23x8 ; URL: 95x34 px -->
