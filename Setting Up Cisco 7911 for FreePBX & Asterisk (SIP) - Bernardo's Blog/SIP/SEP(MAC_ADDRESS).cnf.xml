@@ -124,6 +124,14 @@
       <dscpForAudio>184</dscpForAudio>
       <ringSettingBusyStationPolicy>0</ringSettingBusyStationPolicy>
       <dialTemplate>dialplan.xml</dialTemplate> <!-- Dial Plan File -->
+	  <!-- Speed Dial -->
+      <featureKey>
+        <name>AbbrDial</name>
+        <label>Voicemail</label>
+        <abbrDialNumber>*97</abbrDialNumber>
+        <index>1</index>
+      </featureKey>
+	  <!-- -->
    </sipProfile>
    <commonProfile>
       <phonePassword></phonePassword>
