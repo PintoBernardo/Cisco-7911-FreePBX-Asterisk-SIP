@@ -8,7 +8,7 @@
          <timeZone>Eastern Standard/Daylight Time</timeZone> <!-- Available Time Zones: https://usecallmanager.nz/sepmac-cnf-xml.html -->
          <ntps>
               <ntp>
-                  <name>pool.ntp.org</name>
+                  <name>[===FreePBX IP===]</name> <!-- IP of the FreePBX Server -->
                   <ntpMode>Unicast</ntpMode>
               </ntp>
          </ntps>
@@ -84,7 +84,7 @@
       <kpml>3</kpml>
       <natEnabled>false</natEnabled>
       <natAddress></natAddress>
-      <phoneLabel>[===Phone Name===]</phoneLabel> <!-- Phone Label: Shows on the Lop Right Side -->
+      <phoneLabel>[===Phone Name===]</phoneLabel> <!-- Phone Label: Shows on the Top Right Side -->
       <stutterMsgWaiting>0</stutterMsgWaiting>
       <callStats>false</callStats>
       <silentPeriodBetweenCallWaitingBursts>10</silentPeriodBetweenCallWaitingBursts>
@@ -134,13 +134,15 @@
    <vendorConfig>
       <disableSpeaker>false</disableSpeaker>
       <disableSpeakerAndHeadset>false</disableSpeakerAndHeadset>
+      <enableMuteFeature>true</enableMuteFeature> <!-- Mute Softkey -->
       <pcPort>0</pcPort>
       <settingsAccess>1</settingsAccess>
       <garp>0</garp>
       <voiceVlanAccess>0</voiceVlanAccess>
       <videoCapability>0</videoCapability>
       <autoSelectLineEnable>0</autoSelectLineEnable>
-      <webAccess>1</webAccess>
+      <webAccess>0</webAccess> <!-- Web Access / 0 = Enabled / 1 = Disabled -->
+      <sshAccess>0</sshAccess> <!-- SSH / 0 = Enabled / 1 = Disabled -->
       <spanToPCPort>1</spanToPCPort>
       <loggingDisplay>1</loggingDisplay>
       <loadServer></loadServer>
