@@ -1,98 +1,98 @@
 <CiscoIPPhoneRingList>
 	<Ring>
 		<DisplayName>Analog Synth 1</DisplayName>
-		<FileName>Analog1.raw</FileName>
+		<FileName>Ringtones/AnalogSynth1.raw</FileName>
 	</Ring>
 	<Ring>
 		<DisplayName>Analog Synth 2</DisplayName>
-		<FileName>Analog2.raw</FileName>
+		<FileName>Ringtones/AnalogSynth2.raw</FileName>
 	</Ring>
 	<Ring>
 		<DisplayName>Are You There 1</DisplayName>
-		<FileName>AreYouThere.raw</FileName>
+		<FileName>Ringtones/AreYouThere1.raw</FileName>
 	</Ring>
 	<Ring>
 		<DisplayName>Are You There 2</DisplayName>
-		<FileName>AreYouThereF.raw</FileName>
+		<FileName>Ringtones/AreYouThere2.raw</FileName>
 	</Ring>
 	<Ring>
 		<DisplayName>Bass</DisplayName>
-		<FileName>Bass.raw</FileName>
+		<FileName>Ringtones/Bass.raw</FileName>
 	</Ring>
 	<Ring>
 		<DisplayName>Chime</DisplayName>
-		<FileName>Chime.raw</FileName>
+		<FileName>Ringtones/Chime.raw</FileName>
 	</Ring>
 	<Ring>
 		<DisplayName>Classic Ring 1</DisplayName>
-		<FileName>Classic1.raw</FileName>
+		<FileName>Ringtones/ClassicRing1.raw</FileName>
 	</Ring>
 	<Ring>
 		<DisplayName>Classic Ring 2</DisplayName>
-		<FileName>Classic2.raw</FileName>
+		<FileName>Ringtones/ClassicRing2.raw</FileName>
 	</Ring>
 	<Ring>
 		<DisplayName>Clock Shop</DisplayName>
-		<FileName>ClockShop.raw</FileName>
+		<FileName>Ringtones/ClockShop.raw</FileName>
 	</Ring>
 	<Ring>
 		<DisplayName>Drums 1</DisplayName>
-		<FileName>Drums1.raw</FileName>
+		<FileName>Ringtones/Drums1.raw</FileName>
 	</Ring>
 	<Ring>
 		<DisplayName>Drums 2</DisplayName>
-		<FileName>Drums2.raw</FileName>
+		<FileName>Ringtones/Drums2.raw</FileName>
 	</Ring>
 	<Ring>
 		<DisplayName>Film Score</DisplayName>
-		<FileName>FilmScore.raw</FileName>
+		<FileName>Ringtones/FilmScore.raw</FileName>
 	</Ring>
 	<Ring>
 		<DisplayName>Harp Synth</DisplayName>
-		<FileName>HarpSynth.raw</FileName>
+		<FileName>Ringtones/HarpSynth.raw</FileName>
 	</Ring>
 	<Ring>
 		<DisplayName>Jamaica</DisplayName>
-		<FileName>Jamaica.raw</FileName>
+		<FileName>Ringtones/Jamaica.raw</FileName>
 	</Ring>
 	<Ring>
 		<DisplayName>Koto Effect</DisplayName>
-		<FileName>KotoEffect.raw</FileName>
+		<FileName>Ringtones/KotoEffect.raw</FileName>
 	</Ring>
 	<Ring>
 		<DisplayName>Music Box</DisplayName>
-		<FileName>MusicBox.raw</FileName>
+		<FileName>Ringtones/MusicBox.raw</FileName>
 	</Ring>
 	<Ring>
 		<DisplayName>Piano 1</DisplayName>
-		<FileName>Piano1.raw</FileName>
+		<FileName>Ringtones/Piano1.raw</FileName>
 	</Ring>
 	<Ring>
 		<DisplayName>Piano 2</DisplayName>
-		<FileName>Piano2.raw</FileName>
+		<FileName>Ringtones/Piano2.raw</FileName>
 	</Ring>
 	<Ring>
 		<DisplayName>Pop</DisplayName>
-		<FileName>Pop.raw</FileName>
+		<FileName>Ringtones/Pop.raw</FileName>
 	</Ring>
 	<Ring>
 		<DisplayName>Pulse 1</DisplayName>
-		<FileName>Pulse1.raw</FileName>
+		<FileName>Ringtones/Pulse1.raw</FileName>
 	</Ring>
 	<Ring>
 		<DisplayName>Saxophone 1</DisplayName>
-		<FileName>Sax1.raw</FileName>
+		<FileName>Ringtones/>Saxophone1.raw</FileName>
 	</Ring>
 	<Ring>
 		<DisplayName>Saxophone 2</DisplayName>
-		<FileName>Sax2.raw</FileName>
+		<FileName>Ringtones/>Saxophone2.raw</FileName>
 	</Ring>
 	<Ring>
 		<DisplayName>Vibe</DisplayName>
-		<FileName>Vibe.raw</FileName>
+		<FileName>Ringtones/Vibe.raw</FileName>
 	</Ring>
 	<Ring>
 		<DisplayName>24</DisplayName>
-		<FileName>24.raw</FileName>
+		<FileName>Ringtones/24.raw</FileName>
 	</Ring>
 </CiscoIPPhoneRingList>
